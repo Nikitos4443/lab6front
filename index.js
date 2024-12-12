@@ -72,7 +72,7 @@ const sendToServer = () => {
         body: JSON.stringify(obj)
     };
 
-    fetch('https://lab6back-production.up.railway.app/create', options)
+    fetch('http://lab6back.railway.internal/create', options)
         .then(res => {
 
             if(!res.ok) {
@@ -93,7 +93,7 @@ const get = () => {
         },
     };
 
-    fetch('https://lab6back-production.up.railway.app/get', options)
+    fetch('http://lab6back.railway.internal/get', options)
         .then(res => {
             if(!res.ok) {
                 throw new Error("Bad request");
@@ -142,7 +142,7 @@ const deleteCurrent = (id) => {
         },
     };
 
-    fetch(`https://lab6back-production.up.railway.app/delete/${id}`, options)
+    fetch(`http://lab6back.railway.internal/delete/${id}`, options)
         .then(res => {
             if(!res.ok) {
                 throw new Error("Bad request");
