@@ -1,0 +1,17 @@
+.container-2 {
+    background-image: none;
+    flex-direction: column;
+    gap: 1vh;
+    align-items: center;
+    overflow-y: auto;
+    padding-bottom: 1vh;
+    flex-wrap: nowrap;
+}
+
+.next {
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 2px;
+}
