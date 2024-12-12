@@ -80,7 +80,7 @@ const sendToServer = () => {
             }
         })
 
-    setTimeout(() => {window.location.reload()}, 100)
+    setTimeout(() => {window.location.reload()}, 1000)
 
 }
 
